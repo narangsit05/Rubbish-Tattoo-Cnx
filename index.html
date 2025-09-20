@@ -195,13 +195,13 @@
             color: #333;
         }
         
-        /* ----- Mobile Responsiveness ----- */
+                /* ----- Mobile Responsiveness ----- */
         @media (max-width: 768px) {
             body {
                 flex-direction: column;
-                background-position: top center;
-                background-size: auto;
-                background-attachment: fixed;
+                background-position: center center; /* ให้ภาพอยู่กึ่งกลาง */
+                background-size: cover; /* ทำให้ภาพยืดเต็มหน้าจอพอดี */
+                background-attachment: fixed; /* ทำให้ภาพพื้นหลังไม่เลื่อน */
                 overflow-x: hidden;
             }
         
@@ -232,7 +232,7 @@
                 width: 100%;
                 padding-top: 20px;
                 height: auto;
-                overflow-y: unset;
+                overflow-y: auto; /* ตั้งค่า overflow ให้ main-content แทน body */
             }
         
             .header {
